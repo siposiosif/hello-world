@@ -23,14 +23,12 @@ http://www.templatemo.com/tm-506-tinker
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link rel="stylesheet" href="css/lightbox.css">
-        <audio controls>
-             <source src="C:\Users\gamin\OneDrive\Desktop\siposiosif.github.io\video\429_full_stomping_0138_preview.mp3" type="audio/mp3">
-        </audio>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
 <body>
+    <div id="load_screen"><div id="loading">loading document</div></div>
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -41,7 +39,7 @@ http://www.templatemo.com/tm-506-tinker
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand scroll-top"><em>T</em>inker</a>
+                    <a href="#" class="navbar-brand scroll-top"><em>Y</em>eah <em>B</em>ro</a>
                 </div>
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
@@ -67,7 +65,11 @@ http://www.templatemo.com/tm-506-tinker
             <div class="text-content">
                 <h2><em>Yeah</em> <span>Bro</span> Youtube</h2>
                 <p>Nice to see you here! I hope you like my web page.
-                is simple and functional. Thank you.</p>
+                is simple and functional. 
+                <audio id="song" autoplay="1" onloadeddata="setHalfVolume()">
+                    <source src="C:\Users\gamin\OneDrive\Desktop\siposiosif.github.io\video\429_full_stomping_0138_preview.mp3" type="audio/mp3">
+                </audio> <br> Thank you.
+                </p>
                 <div class="primary-white-button">
                     <a href="#" class="scroll-link" data-id="about">Let's Start</a>
                 </div>
@@ -108,13 +110,13 @@ http://www.templatemo.com/tm-506-tinker
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_03.png" alt="">
+                            <img src="img/service_icon_03.png" >
                         </div>
-                        <h4>Quick Support</h4>
+                        <h4>Patrion</h4>
                         <div class="line-dec"></div>
-                        <p>Etiam quis ullamcorper augue. Morbi leo libero, malesuada eget eleifend eu, interdum sed augue. Sed tempor mi quis rhoncus convallis.</p>
+                        <p>I anjoy making this videos, and i want you to be my supporter!</p>
                         <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                            <a href="https://www.patreon.com/yeahbro" data-id="portfolio">Patrion</a>
                         </div>
                     </div>
                 </div>
@@ -363,7 +365,7 @@ http://www.templatemo.com/tm-506-tinker
             3. Click "Share" and choose "Embed map" tab
             4. Copy only URL and paste it within the src="" field below
         -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.485196115994!2d103.85995441789784!3d1.2880401763270322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fb4e58ad9cd826e!2sSingapore+Flyer!5e0!3m2!1sen!2sth!4v1505825620371" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.342227636908!2d21.29144711591732!3d46.183748079116114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745986096e9f247%3A0x4547d7feadc3aa97!2sNUOVA%20NEON%20BASSANO%20ROM%C3%82NIA%20S.R.L.!5e0!3m2!1sro!2sro!4v1568036348603!5m2!1sro!2sro" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <footer>
@@ -372,7 +374,7 @@ http://www.templatemo.com/tm-506-tinker
                 <div class="col-md-4 col-sm-12">
                     <div class="logo">
                         <a class="logo-ft scroll-top" href="#"><em>T</em>inker</a>
-                        <p>Copyright &copy; 2017 Your Company 
+                        <p>Copyright &copy; 2019 Yeab Bro#youtube 
                        <br>Design: templatemo</p>
                     </div>
                 </div>
@@ -389,8 +391,8 @@ http://www.templatemo.com/tm-506-tinker
                     <div class="contact-info">
                         <h4>More Info</h4>
                         <ul>
-                            <li><em>Phone</em>: 090-090-0320</li>
-                            <li><em>Email</em>: tk@company.co</li>
+                            <li><em>Phone</em>: +40770220967</li>
+                            <li><em>Email</em>: siposiosif@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -409,7 +411,22 @@ http://www.templatemo.com/tm-506-tinker
             </div>
         </div>
     </footer>
-
+    <script>
+        var vid = document.getElementById("song");
+        function enableAutoplay() { 
+         vid.autoplay = true;
+         vid.load();
+        }
+        function setHalfVolume() { 
+  vid.volume = 0.1;
+} 
+    </script>
+    <script >
+        window.addEventListener("load", function(){
+        var load_screen = document.getElementById("load_screen");
+        document.body.removeChild(load_screen);
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -456,4 +473,22 @@ http://www.templatemo.com/tm-506-tinker
     }
     </script>
 </body>
+<style>
+    div#load_screen{
+    background: #ffff4d;
+    opacity: 0.5;
+    position: fixed;
+    z-index:10;
+    top: 0px;
+    width: 100%;
+    height: 1600px;
+}
+div#load_screen > div#loading{
+    color:#FFF;
+    width:120px;
+    height:24px;
+    margin: 300px auto;
+}
+    
+</style>
 </html>
